@@ -119,11 +119,11 @@
                     <table class="table table-bordered">
                         <thead>
                             <tr>
+                                <th>ID</th>
                                 <th>First name</th>
                                 <th>Last name</th>
                                 <th>NIC No</th>
                                 <th>Mobile</th>
-                                <th>Created Date</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
@@ -265,7 +265,7 @@
                                 value += '<td>' + dataArray.data[item].mobile + '</td>'
                                 value += '<td>';
                                 value += '<button class="btn btn-sm btn-success mr-1" onclick="editUsers(' + dataArray.data[item].id + ')">Edit</button>';
-                                value += '<button class="btn btn-sm btn-danger mr-1" onclick="deleteUsers(' + dataArray.data[item].id + ')">Delete</button>';
+                                value += ' <button class="btn btn-sm btn-danger mr-1" onclick="deleteUsers(' + dataArray.data[item].id + ')">Delete</button>';
 //                                value += ' <button class="btn  btn-sm btn-danger onclick="deleteUsers(' + dataArray.data[item].id + ')">Delete</button>';
                                 value += '</td>';
                                 value += '</tr>'
